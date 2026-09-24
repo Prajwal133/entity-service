@@ -26,5 +26,9 @@ public class Booking extends BaseModel {
     private Date endTime;
     private Long totalDistance;
 
+    @OneToOne
+    private ExactLocation startLocaion;
 
+    @OneToOne
+    private ExactLocation endLocaion;
 }
